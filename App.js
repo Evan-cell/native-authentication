@@ -14,6 +14,9 @@ export default function App() {
          preserveAspectRatio="xMidyMid slice"
          />
       </Svg>
+      <View style={styles.closeButtonContainer}>
+        <Text>x</Text>
+      </View>
       </View>
       <View style={styles.buttonContainer}>
         {/* <View style={styles.button}>
@@ -23,10 +26,13 @@ export default function App() {
           <Text style={styles.buttonText}>Register</Text>
         </View> */}
       </View>
-      <View>
+      <View style={styles.formInputContainer}>
         <TextInput placeholder='Email'placeholderTextColor='black' style={styles.textInput} />
         <TextInput placeholder='Full Name' placeholderTextColor='black' style={styles.textInput}/>
         <TextInput placeholder='Password' placeholderTextColor='black' style={styles.textInput}/>
+        <View style={styles.formButton}>
+          <Text style={styles.buttonText}>Login</Text>
+        </View>
       </View>
       <StatusBar style="auto" />
     </View>
