@@ -1,4 +1,5 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet,Dimensions } from 'react-native';
+const {height, width} = Dimensions.get("window")
 const styles = StyleSheet.create({
     container: {
       flex: 1,
@@ -17,7 +18,14 @@ const styles = StyleSheet.create({
 
     },
     buttonText:{
-        color: 'white'
+        color: 'white',
+        fontSize: 20,
+        fontWeight: '600',
+        letterSpacing: 0.5
+    },
+    buttonContainer: {
+        justifyContent: 'center',
+        height: height / 3,
     }
   });
   export default styles;
